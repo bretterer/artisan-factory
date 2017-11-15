@@ -1,0 +1,28 @@
+{
+    "name": "bretterer/artisan-factory",
+    "description": "Allows you to run factory commands directly from artisan instaed of inside of tinker.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Retterer",
+            "email": "bretterer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "^5.5",
+        "illuminate/console": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bretterer\\ArtisanFactory\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bretterer\\ArtisanFactory\\FactoryServiceProvider"
+            ]
+        }
+    }
+}
